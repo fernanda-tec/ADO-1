@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', 'Serif';
+}
+
+body {
+    background: rgb(196,197,208);
+    background: black;
+}
+nav {
+    background-color: rgb(53, 59, 89);
+    display: flex;
+    justify-content: space-between; /* Espaço entre a logo e navegação */
+    align-items: center;
+    padding: 0 20px;
+    
+}
+
+ul {
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: rgb(245, 230, 230);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none; /*para tirar o sublinhado de link do nav*/
+}
+
+h1 {
+    padding: 20px;
+    align-items: center;
+    color: rgb(206, 206, 206);
+
+}
+
+.nav-links li {
+    list-style-type: none;
+    margin: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+.nav-links a:hover {
+    color: #ba9bec;
+}
+
+.efeito-maquina {
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-right: 4px solid;
+    width: 0;
+    white-space: nowrap; /*para nao quebrar a linha*/
+    overflow: hidden; /*esconder os caracteres que ainda nao foram digitados*/
+    animation: typing 4s steps(70) forwards, /*animação da maquina do efeito maquina de escrever*/
+    blinking 0.75s step-end infinite; /*duração de piscadas e para ir parar e ao recarregar a pag. fazer denovo o efeito*/
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 142ch; /*width com a quantidade de caracteres no p*/
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+h1 {
+    font-weight: 600;
+}
+
+li {
+    color: antiquewhite;
+    padding-left: 20px;
+    font-size: 1.20em;
+}
+
+img {
+    margin-top: 20px;
+    display: block;
+    margin: auto;
+}
+
+.image {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    border-color: rgb(245, 245, 245);
+    border: solid;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
